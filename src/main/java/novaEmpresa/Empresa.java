@@ -18,6 +18,7 @@ public class Empresa extends HttpServlet {
     }
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Recebe o parâmetro informado na URL
 		String name = request.getParameter("nome");
 		
 		PrintWriter out = response.getWriter();
